@@ -1,0 +1,18 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+img {
+    width: 80%;
+    height: 100%;
+}
+
+.row {
+    height: 120px;
+    margin-top: 10px;
+}
+
+.oculto {
+    display: none;
+}
