@@ -1,0 +1,1 @@
+console.assert(cartasArriba > 2, "ERROR: Se muestran más de dos cartas", "manejarJugada no verificó que no se muestres más de dos cartas")
