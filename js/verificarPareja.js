@@ -3,8 +3,9 @@ function verificarPareja() {
     $cartasMostradas.forEach(cartaMostrada => cartaMostrada.classList.remove("mostrada"));
     cartasArriba = 0;
     if ($cartasMostradas[0].id === $cartasMostradas[1].id) {
-        exito++;
-        return setTimeout(anotarExito, 500);
+        aciertos++;
+        chequearExito();
+        return setTimeout(anotarAcierto, 500);
     } else {
         return setTimeout(ocultarCartas, 1200);
 
@@ -12,7 +13,7 @@ function verificarPareja() {
 
 }
 
-function anotarExito() {
+function anotarAcierto() {
     casillasSeleccionadas.forEach(posicion =>
         cartasEnTablero[posicion].classList.add("pareja-acertada")
     );
@@ -27,9 +28,4 @@ function ocultarCartas() {
     });
     habilitarSeleccion();
     return casillasSeleccionadas = [];
-}
-
-
-function mostrarTiempoDeJuego(tiempo) {
-    return;
 }

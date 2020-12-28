@@ -1,6 +1,6 @@
 let cartasArriba = 0;
-let intentos = 0;
-let exito = 0
+
+let aciertos = 0;
 let casillasSeleccionadas = [];
 
 function manejarJugada(e) {
@@ -14,9 +14,20 @@ function manejarJugada(e) {
     if (cartasArriba === 2) {
         bloquearSeleccion();
         intentos++;
+        actualizarEstado(intentos);
+
         return verificarPareja();
     }
     if (cartasArriba > 2) { return "ERROR: Se muestran más de dos cartas" }
 
+    return;
+}
+
+function chequearExito() {
+    if (aciertos === 8) {
+        clearInterval(reloj);
+        aciertos = 0;
+        return actualizarEstado("exito");
+    }
     return;
 }

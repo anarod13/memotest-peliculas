@@ -1,6 +1,8 @@
     body {
         margin-left: 10%;
-        margin-right: 10%
+        margin-right: 10%;
+        background-color: rgba(0, 0, 0, 0.808);
+        color: cornsilk;
     }
     
     img {
@@ -8,9 +10,9 @@
         height: 100%;
     }
     
-    .row {
-        height: 120px;
-        margin-top: 10px;
+    #tablero .row {
+        height: 120;
+        margin-bottom: 10;
     }
     
     .oculto {
@@ -23,6 +25,7 @@
     
     .encabezado {
         padding-top: 10;
+        margin-bottom: 10;
     }
     
     h1 {
@@ -38,6 +41,17 @@
         margin-left: 10;
     }
     
-    header {
-        height: 90px;
+    #estado {
+        margin: 0 20 16 18;
+    }
+    
+    #tiempo {
+        text-align: right;
+        margin: 0 60 16 0;
+    }
+    
+    .alert {
+        height: 50;
+        vertical-align: middle;
+        padding: 10;
     }
