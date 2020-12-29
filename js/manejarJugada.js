@@ -25,6 +25,7 @@ function manejarJugada(e) {
 
 function chequearExito() {
     if (aciertos === 8) {
+        document.querySelector("#intro-tiempo").innerText = "Tardaste ";
         clearInterval(reloj);
         aciertos = 0;
         return actualizarEstado("exito");
