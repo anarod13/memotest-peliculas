@@ -27,8 +27,9 @@ function habilitarTablero() {
     almacenarCartas();
     $casillas = document.querySelectorAll(".casilla");
     $casillas.forEach($casilla => buscarCarta($casilla));
-    actualizarTiempoDeJuego();
-    habilitarS
+    activarReloj();
+    habilitarSeleccion();
+
     return;
 }
 

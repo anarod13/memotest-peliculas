@@ -1,0 +1,23 @@
+{
+  "name": "memotest",
+  "version": "1.0.0",
+  "description": "Juego Memotest para r/argentina programa",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anarod13/memotest-peliculas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anarod13/memotest-peliculas/issues"
+  },
+  "homepage": "https://github.com/anarod13/memotest-peliculas#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1"
+  }
+}
