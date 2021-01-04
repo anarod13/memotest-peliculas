@@ -1,21 +1,18 @@
 let cartasArriba = 0;
-
 let aciertos = 0;
 let casillasSeleccionadas = [];
 
 function manejarJugada(e) {
     let cartaSeleccionada = e.target;
-    cartaSeleccionada.classList.add("oculto")
     let posicion = reversos.indexOf(cartaSeleccionada);
     casillasSeleccionadas.push(posicion);
-    cartasEnTablero[posicion].classList.remove("oculto");
+    $casillas[posicion].classList.add("giro");
     cartasEnTablero[posicion].classList.add("mostrada");
     cartasArriba++;
     if (cartasArriba === 2) {
         bloquearSeleccion();
         intentos++;
         actualizarEstado(intentos);
-
         return verificarPareja();
     }
     if (cartasArriba > 2) { return "ERROR: Se muestran más de dos cartas" }

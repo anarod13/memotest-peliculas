@@ -8,9 +8,7 @@ function verificarPareja() {
         return setTimeout(anotarAcierto, 500);
     } else {
         return setTimeout(ocultarCartas, 1200);
-
     }
-
 }
 
 function anotarAcierto() {
@@ -23,8 +21,7 @@ function anotarAcierto() {
 
 function ocultarCartas() {
     casillasSeleccionadas.forEach(posicion => {
-        cartasEnTablero[posicion].classList.add("oculto");
-        reversos[posicion].classList.remove("oculto");
+        $casillas[posicion].classList.remove("giro");
     });
     habilitarSeleccion();
     return casillasSeleccionadas = [];
