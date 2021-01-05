@@ -6,13 +6,30 @@
     }
     
     img {
-        width: 80%;
+        width: 100%;
         height: 100%;
+        -webkit-backface-visibility: hidden;
+        /* Safari */
+        backface-visibility: hidden;
+        position: absolute;
+        transform-style: preserve-3d;
     }
     
     #tablero .row {
         height: 120;
-        margin-bottom: 10;
+        margin: 0 10% 10 10%;
+    }
+    
+    .girada {
+        transform: rotateY(180deg);
+    }
+    
+    .giro {
+        transform: rotateY(180deg);
+    }
+    
+    .giro-reves {
+        transform: rotateY(-180deg);
     }
     
     .oculto {
@@ -54,4 +71,12 @@
         height: 50;
         vertical-align: middle;
         padding: 10;
+    }
+    
+    .flip-card {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
     }

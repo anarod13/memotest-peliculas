@@ -8,7 +8,7 @@ function actualizarEstado(intento) {
 }
 
 
-function actualizarTiempoDeJuego() {
+function activarReloj() {
 
     reloj = setInterval(function() {
         let tiempoDeJuego = calcularTiempo()
