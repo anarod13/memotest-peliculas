@@ -2,7 +2,7 @@ function actualizarEstado(intento) {
     let estado = "Intentos: " + intento;
 
     if (intento === "exito") {
-        estado = "Ganaste! Toca Empezar! para jugar de vuelta"
+        estado = "Ganaste! Toca ¡Empezar! para jugar de vuelta"
     }
     return document.querySelector("#estado").innerText = estado;
 }

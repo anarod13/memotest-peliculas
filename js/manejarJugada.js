@@ -9,6 +9,7 @@ function manejarJugada(e) {
     $casillas[posicion].classList.add("giro");
     cartasEnTablero[posicion].classList.add("mostrada");
     cartasArriba++;
+
     if (cartasArriba === 2) {
         bloquearSeleccion();
         intentos++;
