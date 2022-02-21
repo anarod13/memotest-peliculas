@@ -1,15 +1,14 @@
-export function actualizarEstado(intentos = 'intentos') {
-
+export function actualizarEstado(intentos = '') {
+    let estado;
 
     if (intentos === "exito") {
-        estado = "Ganaste! Toca ¡Empezar! para jugar de vuelta"
-        return document.querySelector("#estado").innerText = estado;
-    } else {
-
-    intentos = Number(document.querySelector('#estado').textContent)
-    intentos++
-    let estado = intentos;
-    return document.querySelector("#estado").innerText = estado;}
+        estado = "Ganaste! Toca Empezar! para jugar de vuelta"
+        document.querySelector("#estado").innerText = estado;
+        } else {
+          intentos = Number(document.querySelector('#estado').textContent)
+          intentos++
+          let estado = intentos;
+          document.querySelector("#estado").innerText = estado;}
     
     return;
 }
