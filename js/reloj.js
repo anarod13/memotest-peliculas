@@ -10,9 +10,9 @@ import { actualizarReloj } from "./ui.js/alertas.js";
 //         return;
 //     }
 
-export let calcularTiempo;
+export let reloj;
 export function activarReloj(){
-calcularTiempo= setInterval (function(){
+reloj = setInterval (function(){
     let $minutos = Number(document.querySelector("#minutos").innerText);
     let $segundos = Number(document.querySelector("#segundos").innerText);
     let tiempo = ($minutos*60)+ $segundos;

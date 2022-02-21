@@ -11,90 +11,24 @@ export function bloquearSeleccion() {
     return;
 }
 
-export function ocultarCartas() {// casillasSeleccionadas for Each casilla.parentNode classlist.remove 'giro'
-    casillasSeleccionadas.forEach(posicion => {
-        $casillas[posicion].classList.remove("giro");
+export function ocultarCartas() {
+    const $cartasSeleccionadas= document.querySelectorAll(".seleccionada")
+    $cartasSeleccionadas.forEach($casilla => {
+        $casilla.classList.remove('giro');
+        $casilla.classList.remove('seleccionada')
     });
     habilitarSeleccion();
-    return casillasSeleccionadas = [];
+    return ;
 }
 
 export function asignarCartas(juegoDeCartas, ordenDeCartas){
     const $cartas = document.querySelectorAll('.carta');
     $cartas.forEach(($carta, i) =>{
     const orden = Number(ordenDeCartas[i]);
-    $carta.id = juegoDeCartas[orden].id;
+    // $carta.id = juegoDeCartas[orden].id;
+    $carta.parentNode.id = juegoDeCartas[orden].id;
     $carta.src = juegoDeCartas[orden].src;
-    $carta.setAttribute('index', i);
+    // $carta.setAttribute('index', i);
     $carta.classList.add('girada');
 })
 }
-
-// const juegoDeCartas = {
-//     0: {
-//         id: 'django',
-//         src: '.../img/django.jpg'
-//     },
-//     1: {
-//         id: 'hateful-eight',
-//         src: '.../img/hateful-eight'    
-//     },
-
-//     2: {
-//         id: 'jackie-brown',
-//         src: '.../img/jackie-brown'    
-//     },
-//     3: {
-//         id: 'kill-bill',
-//         src: '.../img/kill-bill'    
-//     },
-//     4: {
-//         id: 'once-upon-a-time-hollywood',
-//         src: '.../img/once-upon-a-time-hollywood'    
-//     },
-//     5: {
-//         id: 'pulp-fiction',
-//         src: '.../img/pulp-fiction'    
-//     },
-//     6: {
-//         id: 'reservoir-dogs',
-//         src: '.../img/reservoir-dogs'    
-//     },
-//     7: {
-//         id: 'inglorious-basterds',
-//         src: '.../img/inglorious-basterds'    
-//     },
-//     8: {
-//         id: 'django',
-//         src: '.../img/django.jpg'
-//     },
-//     9: {
-//         id: 'hateful-eight',
-//         src: '.../img/hateful-eight'    
-//     },
-
-//     10: {
-//         id: 'jackie-brown',
-//         src: '.../img/jackie-brown'    
-//     },
-//     11: {
-//         id: 'kill-bill',
-//         src: '.../img/kill-bill'    
-//     },
-//     12: {
-//         id: 'once-upon-a-time-hollywood',
-//         src: '.../img/once-upon-a-time-hollywood'    
-//     },
-//     13: {
-//         id: 'pulp-fiction',
-//         src: '.../img/pulp-fiction'    
-//     },
-//     14: {
-//         id: 'reservoir-dogs',
-//         src: '.../img/reservoir-dogs'    
-//     },
-//     15: {
-//         id: 'inglorious-basterds',
-//         src: '.../img/inglorious-basterds'    
-//     },
-// }
