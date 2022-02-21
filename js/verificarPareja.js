@@ -1,9 +1,9 @@
-function verificarPareja() {
-    let $cartasMostradas = document.querySelectorAll(".mostrada");
-    $cartasMostradas.forEach(cartaMostrada => cartaMostrada.classList.remove("mostrada"));
-    cartasArriba = 0;
-    if ($cartasMostradas[0].id === $cartasMostradas[1].id) {
-        aciertos++;
+import {habilitarSeleccion} from './ui.js/tablero.js'
+
+export function verificarPareja() {
+    let $cartasSeleccionadas = document.querySelectorAll(".seleccionada");
+    $cartasSeleccionadas.forEach(cartaMostrada => cartaMostrada.classList.remove('seleccionada'));
+    if ($cartasSeleccionadas[0].id === $cartasSeleccionadas[1].id) {
         chequearExito();
         return setTimeout(anotarAcierto, 500);
     } else {
@@ -12,17 +12,20 @@ function verificarPareja() {
 }
 
 function anotarAcierto() {
-    casillasSeleccionadas.forEach(posicion =>
-        cartasEnTablero[posicion].classList.add("pareja-acertada")
+    document.querySelectorAll(".seleccionada").forEach($carta =>
+        $carta.classList.add("pareja-acertada")
     );
     habilitarSeleccion();
-    return casillasSeleccionadas = [];
+    return 
 }
 
-function ocultarCartas() {
-    casillasSeleccionadas.forEach(posicion => {
-        $casillas[posicion].classList.remove("giro");
-    });
-    habilitarSeleccion();
-    return casillasSeleccionadas = [];
+function chequearExito() {
+    const acertadas = document.querySelectorAll(".seleccionada");
+    if (acertadas.length === 16) {
+        document.querySelector("#intro-tiempo").innerText = "Tardaste ";
+        clearInterval(reloj);
+        aciertos = 0;
+        return actualizarEstado("exito");
+    }
+    return;
 }
