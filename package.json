@@ -4,7 +4,14 @@
   "description": "Juego Memotest para r/argentina programa",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "testcollect": "jest --collect-coverage",
+    "test:dev": "jest --watch",
+    "test:ui": "run-p serve test:cypress",
+    "test:ui:dev": "run-p serve test:cypress:dev",
+    "test:cypress": "cypress run",
+    "test:cypress:dev": "cypress open",
+    "serve": "http-server -c-1"
   },
   "repository": {
     "type": "git",
@@ -18,7 +25,11 @@
   "homepage": "https://github.com/anarod13/memotest-peliculas#readme",
   "dependencies": {
     "bootstrap": "^4.6.1",
-    "jest": "^27.5.1",
     "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "babel": "^6.23.0",
+    "jest": "^27.5.1"
   }
 }

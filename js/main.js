@@ -1,4 +1,4 @@
-import {asignarCartas, ocultarCartas} from './ui.js/tablero.js';
+import {asignarCartas} from './ui.js/tablero.js';
 import {activarReloj} from './reloj.js'
 import {habilitarSeleccion} from './ui.js/tablero.js'
 

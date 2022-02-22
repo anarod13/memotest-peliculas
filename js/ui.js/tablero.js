@@ -25,10 +25,8 @@ export function asignarCartas(juegoDeCartas, ordenDeCartas){
     const $cartas = document.querySelectorAll('.carta');
     $cartas.forEach(($carta, i) =>{
     const orden = Number(ordenDeCartas[i]);
-    // $carta.id = juegoDeCartas[orden].id;
     $carta.parentNode.id = juegoDeCartas[orden].id;
     $carta.src = juegoDeCartas[orden].src;
-    // $carta.setAttribute('index', i);
     $carta.classList.add('girada');
 })
 }
