@@ -76,7 +76,7 @@ export default `<div class="col-sm-2 encabezado">
         <div class="col-sm-3">
             <div class="casilla flip-card">
                 <img class="reverso-carta" src="img\movie-night2.png" alt="carta-abajo">
-                <img class="carta " id="" src="" alt="">
+                <img class="carta girada pareja-acertada" id="" src="img/reservoir-dogs.jpg" alt="">
             </div>
         </div>
     </div>        <div class="row">
@@ -113,7 +113,7 @@ export default `<div class="col-sm-2 encabezado">
             Intentos: <strong id="estado">0</strong>
         </div>
         <div class="alert alert-secondary col-sm" role="alert">
-            Tiempo de juego: <strong id="intro-tiempo">Llevas </strong><strong id="minutos">0</strong> minutos y <strong id="segundos">0</strong> segundos jugando
+            Tiempo de juego: <strong id="intro-tiempo">Llevas </strong><strong id="minutos">5</strong> minutos y <strong id="segundos">40</strong> segundos jugando
         </div>
     </div>
 </div>
