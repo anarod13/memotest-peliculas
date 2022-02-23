@@ -93,10 +93,10 @@ export default `<div class="col-sm-2 encabezado">
             </div>
         </div>
         <div class="col-sm-3">
-            <div class="casilla flip-card">
-                <img class="reverso-carta" src="img\movie-night2.png" alt="carta-abajo">
-                <img class="carta " id="" src="" alt="">
-            </div>
+           <div class="casilla flip-card giro seleccionada" id="pulp-fiction">
+            <img class="reverso-carta" src="img\movie-night2.png" alt="carta-abajo">
+            <img class="carta girada" id="" src="img/pulp-fiction.jpg" alt="">
+    </div>
         </div>
         <div class="col-sm-3">
             <div class="casilla flip-card">
