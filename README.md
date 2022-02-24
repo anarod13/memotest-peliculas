@@ -1,5 +1,5 @@
 # memotest-peliculas
-Juego de memoria con películas, con node.js y npm
+Juego de memoria con películas, testeado con Jest
 ##Instalación
 
 Correr
