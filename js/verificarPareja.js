@@ -5,7 +5,6 @@ import {reloj, activarReloj} from './reloj.js'
 
 export function verificarPareja() {
     let $cartasSeleccionadas = document.querySelectorAll(".seleccionada");
-    // $cartasSeleccionadas.forEach(cartaMostrada => cartaMostrada.classList.remove('seleccionada'));
     if ($cartasSeleccionadas[0].id === $cartasSeleccionadas[1].id) {
         setTimeout(anotarAcierto, 500)
         setTimeout(chequearExito, 500);
