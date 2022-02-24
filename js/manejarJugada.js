@@ -14,7 +14,6 @@ export function manejarJugada(e) {
         verificarPareja()
         return;
     }
-    if (cartasArriba > 2) { return "ERROR: Se muestran más de dos cartas" }
 
     return;
 }

@@ -21,6 +21,6 @@ test('Pasa el tiempo', async () => {
     expect(reloj).toBeGreaterThan(tiempoInicial);
   });
 
-  afterEach(() => {
-    jest.useRealTimers();
-  });
+  // afterEach(() => {
+  //   jest.useRealTimers();
+  // });
