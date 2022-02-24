@@ -113,7 +113,7 @@ export default `<div class="col-sm-2 encabezado">
             Intentos: <strong id="estado">0</strong>
         </div>
         <div class="alert alert-secondary col-sm" role="alert">
-            Tiempo de juego: <strong id="intro-tiempo">Llevas </strong><strong id="minutos">5</strong> minutos y <strong id="segundos">40</strong> segundos jugando
+            Tiempo de juego: <strong id="intro-tiempo">Llevas </strong><strong id="minutos">0</strong> minutos y <strong id="segundos">40</strong> segundos jugando
         </div>
     </div>
 </div>
